@@ -10,4 +10,19 @@ $(function(){
   } else {
     alert("Please refresh page and enter only 1, 2, or 3!");
   }
+
+  $(".spiderToggle").click(function() {
+    $("#spider").show();
+    $("#ant, #dragon").hide();
+  });
+
+  $(".antToggle").click(function() {
+    $("#ant").show();
+    $("#spider, #dragon").hide();
+  });
+
+  $(".dragonToggle").click(function(){
+    $("#dragon").show();
+    $("#ant, #spider").hide();
+  });
 });
